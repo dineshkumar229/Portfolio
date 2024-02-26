@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Portfolio</title>
+    <style>
+        html,body{
+            margin:0px;
+            padding:0px;
+            background-color: black;
+            color:white;
+            overflow-x: hidden;
+        }
+        #navbar{
+            position:fixed;
+            z-index: 1;
+        }
+        #none>li{
+            display:inline-block;
+            padding-left: 50px;
+            font-family:cursive;
+        }
+        #none{
+            margin: 10px 20px;
+            text-shadow: 2px 2px 2px black;
+        }
+        #one{
+            padding-top:7%;
+        }
+        #one>h3{
+            text-shadow: 1px 1px 3px;
+            font-family: cursive;
+        }
+        #profile{
+            width:350px;
+            height:430px;
+            border-style: double;
+            border-inline-end-style:dotted;
+            border-color: black;
+            box-shadow:4px 4px 5px black;
+        }
+        .card{
+            /* background: linear-gradient(to right,aqua,yellow); */
+            background:linear-gradient(to right,blue,red);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card>h2{
+            font-family:serif;
+        }
+        #port{
+            font-family:cursive;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background:linear-gradient(to right,red,yellow);
+        }
+        #parent{
+            height:300px;
+        }
+        #img{
+            height: 480px;
+        }
+        #about{
+            font-family:cursive;
+            padding-left: 10px;
+        }
+        hr{
+            border:2px solid black;
+            color:black;
+        }
+        #bg{
+            transform: translateX(650px);
+        }
+        #free{
+            position: relative;
+            top:-320px;
+            color:orange;
+            font-weight: 900;
+        }
+        #para{
+            position: relative;
+            top:-280px;
+            font-size:larger;
+            font-weight: bold;  
+        }
+        #hireme{
+            position: relative;
+            left:46%;
+        }
+        #button:hover{
+            background-color:red;
+        }
+        #line{
+            text-decoration-line: none;
+        }
+        #bar1,#bar{
+            transform: translateX(50px);
+        }
+        #email{
+            transform: translateY(-37px);
+        }
+        @media screen and (max-width:800px){
+        body{
+                background-color:rgba(255, 0, 191, 0.393);
+            }
+        #skills{
+            margin-bottom: 270px;
+            display: block;
+            transform: translateY(330px);
+        }
+        #hireme{
+            margin-left: -27px;
+        }
+        #img{
+            margin-top: 70px;
+        }
+        #navbar{
+            transform: translateX(-70px);
+            height:70px;
+        }
+        #none{
+            transform: translate(230px,-50px);
+        }
+        #bar{
+            margin-top:50px;
+        }
+        #add{
+            margin-left: 90px;
+        }
+        #parents{
+            transform: translateY(370px);
+        }
+        #education{
+            transform: translateY(412px);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container col-md-12">
+    <div id="navbar" class="navbar bg-dark col-md-12">
+        <h2 id="port" class="card text-uppercase bg-success ">Portfolio</h2>
+        <ul type="none"id="none" class="mr-5">
+            <li id="line"><a href="#img">Home</a></li>
+            <li id="line"><a href="#about">About</a></li>
+            <li id="line"><a href="#contact">Contact Us</a></li>
+            <li id="line"><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <div id="one"class="row">
+        <h3 class="col-md-6"></h3>
+        <div id="img"class="col-md-12 card"><img id="profile" class="rounded-circle" src="dineshkumar.jpg">
+        </div>
+        </div>
+        <span id="about" class="col"><h2 class="text-center bg-primary">About Me</h2>
+                <h1 class="text-center text-primary">Full Stack Developer</h1>
+                <h5 id="about" class="bg-light text-danger p-5 text-center rounded-circle font-size-2">
+                    Hii I am Dineshkumar from Kanchipuram.My highest Education qualification in Bsc.Computer sciece at Sri sankara college in Kanchipuram.My Goal is Achieve a successfull position in my life and build a own house thats my big goal.
+                    My strength is if i want to study something in tamil or English, I will read it bravely in fornt of everyone and my faith is my greatest strength.
+                </h5>
+        </span>
+        <div id="parent"class="row col-md-12 m-1">
+            <div id="skill" class="col-md-6 mt-4"><h2 class="text-center text-danger">PROJECTS</h2>
+                <ul type="square">
+                    <li><h5>Education Website</h5></li>
+                    <li><h5>Calculator Project</h5></li>
+                    <li><h5>Digital Clock</h5></li>
+                    <li><h5>Protfolio</h5></li>
+                    <li><h5>Login Form</h5></li>
+                    <li><h5>CSK IPL</h5></li>
+                </ul>
+            </div>
+            <div id="one"class="col-md-6 p-2 bg-info"><h2 class="text-danger text-center">CERTIFICATIONS</h2>
+                <ul type="square" class="mt-4">
+                    <li><h5>Electronics &ICT Academy course on python programming</h5></li>
+                    <li><h5>Many quiz certificates</h5></li>
+                    <li><h5>Nss service central government certificate</h5></li>
+                    <li><h5>Course completed in Forntend development</h5></li>
+                </ul>
+            </div>
+        </div>
+        <h1 id="education" class="bg-primary text-center p-1 mt-4">Education Qualification</h1>
+        <div id="parents"class="row col-md-12 mt-5 ml-2">
+                <table class="table table-striped text-light bg-danger text-center"id="parent">
+                    <thead>
+                      <tr>
+                        <th scope="col">COURSE</th>
+                        <th scope="col">NAME OF THE INSTITUTION</th>
+                        <th scope="col">YEAR OF PASSING</th>
+                        <th scope="col">PRECENTAGE OF MARKS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">B.S.C.COMPUTER SCIENCE</th>
+                        <td>SRI SANKARA ATRS AND SCIENCE COLLEGE</td>
+                        <td>2023</td>
+                        <td>80%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">H.S.C</th>
+                        <td>ARIGNAR ANNA GOVT HR SEC SCHOOL</td>
+                        <td>2020</td>
+                        <td>65%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">S.S.L.C</th>
+                        <td>ARIGNAR ANNA GOVT HR SEC SCHOOL</td>
+                        <td>2018</td>
+                        <td>75%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <h1 class="text-center bg-danger mt-5" id="skills">Skills</h1>
+        <span>
+        <div class="row col-md-12">
+            <div id="bar" class="col-md-6 text-center p-4"><i class="fa fa-html5" style="font-size:48px;color:red"></i><h4>HTML</h4><div class="bg-info progress-bar progress-bar-striped" role="progressbar"style="width:80%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">80%</div></div>
+            <div id="bar1" class="col-md-6 text-center p-4"><i class="fa fa-css3" style="font-size:48px;color:red"></i><h4>CSS</h4><div class="bg-danger progress-bar progress-bar-striped" role="progressbar"style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div></div>
+            <div id="bar1" class="col-md-6 text-center p-4"><h4>BOOSTRAP</h4><div class="bg-warning progress-bar progress-bar-striped" role="progressbar"style="width:65%" aria-valuenow="65" aria-valuemin="0"aria-valuemax="100">65%</div></div>
+            <div id="bar1" class="col-md-6 text-center p-4"><i class='fab fa-autoprefixer' style='font-size:48px;color:red'></i><h4>JAVASCRIPT</h4><div class="bg-success progress-bar progress-bar-striped" role="progressbar"style="width:60%" aria-valuenow="60" aria-valuemin="0"aria-valuemax="100">60%</div></div>
+        </span>
+        </div>
+    </div>
+    </div>
+    <p class="text-center"><a id="button" class="btn btn-primary py-3 px-3" id="cv" href="https://drive.google.com/file/d/1Nr-PqmOt6aLYIeVBRbbfAStK2U_pAIsQ/view?usp=drivesdk">Download Resume</a></p>
+    <img id="hire" class="col-md-12" src="background.jpg" style="height:460px;">
+    <h1 id="free" class="text-center">I'm Available for freelancing</h1>
+    <p id="para"class="text-center text-light">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    <p><div id="hireme" class="btn btn-warning pl-4 pr-4 pt-2 pb-2">HIRE ME</div></p>
+    <h1 id="contact" class="text-center text-warning">Contact Me</h1>
+    <h4 class="text-center text-danger">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</h4>
+
+
+<div id="about" class="row d-flex contact-info mb-2 p-5 m-7">
+  <div class="col-md-6 col-lg-3 d-flex ftco-animate bg-warning">
+      <div class="align-self-stretch box p-4 text-center" id="add">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <i class="fa fa-map-marker" style="font-size:50px"></i>
+          <h3 class="mb-4">Address</h3>
+        <p>Ayyanpettai,Kanchipuram district</p>
+        <a href="https://maps.app.goo.gl/uto8cCptRrXC6xod8">https://maps.app.goo.gl/uto8cCptRrXC6xod8</a>
+      </div>
+  </div>
+  <div class="col-md-6 col-lg-3 ftco-animate ">
+      <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-phone2"></span>
+          </div>
+          <i class="fa fa-phone" style="font-size:50px"></i>
+          <h3 class="mb-4">Contact Number</h3>
+        <p class="text-primary"><a href="tel://1234567920">9790083925</a></p>
+      </div>
+  </div>
+  <div class="col-md-6 col-lg-3 ftco-animate bg-dark p-3">
+      <div class="align-self-stretch box p-4 text-center" id="email">
+          <i class="fa fa-envelope p-3" style="font-size:48px"></i>
+          <h3 class="mb-4">Email Address</h3>
+        <p><a href="mailto:info@yoursite.com">manidinesh229@gmail.com</a></p>
+      </div>
+  </div>
+  <div class="col-md-6 col-lg-3 ftco-animate bg-danger">
+      <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-globe"></span>
+          </div>
+          <i class="fa fa-github" style="font-size:55px"></i>
+          <h3 class="mb-4">GitHub</h3>
+        <p><a href="https://github.com/dineshkumar229">https://github.com/dineshkumar229</a></p>
+      </div>
+  </div>
+</div>
+
+    <hr>
+    <footer>
+         <h1 class="bg-primary text-center m-3 p-2">Thank you</h1>
+    </footer>
+   
+</body>
+</html>
